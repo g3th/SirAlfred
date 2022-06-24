@@ -136,4 +136,4 @@ def UserInfo(length,users,passwords):
 	return
 
 def options():
-	print("1) Express VPN | 2) IpVanish")
+	print("1) Express VPN | 2) IpVanish | 3) Nord VPN")

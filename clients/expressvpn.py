@@ -7,9 +7,11 @@ import modules.keyevents as keyevents
 import modules.settings	as settings
 import time
 
+from modules.settings import directories as path
+
 def Checker():
 
-		os.system("clear"); header.Checking()
+		print("\x1bc"); header.Checking()
 		ctr=0 
 
 		users=[] 
@@ -17,7 +19,7 @@ def Checker():
 
 		app='com.expressvpn.vpn'
 
-		with open ('/home/user/accounts','r') as accounts:
+		with open (path()+'express','r') as accounts:
 
 			for lines in accounts:
 	
@@ -54,7 +56,7 @@ def Checker():
 	
 			while True:
 		
-				if "HelpDiagnosticsActivity" in str(keyevents.GetActivity()):
+				if "HelpDiagnosticsActivity" in str(keyevents.GetActivity('mFocusedApp')):
 					header.Valid()
 					header.UserInfo(len(users)-ctr,users[ctr],passwords[ctr])
 

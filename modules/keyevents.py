@@ -3,7 +3,7 @@
 
 import modules.settings as settings
 
-
+from modules.servers import IpvanishProxies
 def Menu():
 	cmd = settings.device.shell('input keyevent 1')
 	return cmd
@@ -50,8 +50,8 @@ def Escape():
 	cmd = settings.device.shell('input keyevent 111')
 	return cmd
 
-def GetActivity():
-	cmd = settings.device.shell("dumpsys window windows | grep -E 'mFocusedApp'")
+def GetActivity(internalVariable):
+	cmd = settings.device.shell("dumpsys window windows | grep -E '"+internalVariable+"'")
 	return cmd
 
 def ClearData(app):
