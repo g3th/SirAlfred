@@ -27,14 +27,6 @@ Your Phone needs ``` Developer Options > Android Debugging ``` enabled in order 
 
 ``` adb devices ```
 
-#### Connect your phone, and check an existing text file containing account combos, i.e. :
-
-``` cd ~/accounts ```
-
-``` cat accounts ```
-
-``` example@mail.com:password ```
-
 --------------------------------------------------
 
 #### To do:
