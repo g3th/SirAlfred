@@ -1,15 +1,15 @@
 # Sir-Alfred
-
+--------------------------------------------------------------------------------------
 ![Alt text](assets/Untitled.png)
 
+## Current version only supports 5.5 inches device, due to 'keyevents.tap' function. ##
+--------------------------------------------------------------------------------------
 
 Automated Account checker for Android apps, using Python and ADB shell. 
 
 This software is not intended for illegal purposes.
 
 Reads from file and uses shell sendevents to access device, including ``` dumpsys ``` to obtain changes in activity.
-
-Current version only supports 5.5 inches device, due to 'keyevents.tap' function.
 
 Your Phone needs ``` Developer Options > Android Debugging ``` enabled in order to be connected. Some future functions may need root.
 
