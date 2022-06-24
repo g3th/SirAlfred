@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------------
 ![Alt text](assets/Untitled.png)
 
-## Current version only supports 5.5 inches device, due to 'keyevents.tap' function. ##
+### Current version only supports 5.5 inches device, due to 'keyevents.tap' function. ###
 --------------------------------------------------------------------------------------
 
 Automated Account checker for Android apps, using Python and ADB shell. 
