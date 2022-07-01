@@ -55,7 +55,7 @@ def Checker():
 			
 				keyevents.Tap(566,1230);time.sleep(2)
 		
-			if "MainActivity" in keyevents.GetActivity():
+			if "MainActivity" in keyevents.GetActivity('mFocusedApp'):
 		
 				header.Valid()
 				header.UserInfo(len(users)-ctr,users[ctr],passwords[ctr])

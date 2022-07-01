@@ -3,7 +3,6 @@
 
 import modules.settings as settings
 
-from modules.servers import IpvanishProxies
 def Menu():
 	cmd = settings.device.shell('input keyevent 1')
 	return cmd
@@ -56,4 +55,16 @@ def GetActivity(internalVariable):
 
 def ClearData(app):
 	cmd = settings.device.shell("pm clear "+app)
+	return cmd
+
+def SetUpAProxy(proxy):
+	cmd = settings.device.shell('settings put global http_proxy '+proxy)
+	return cmd
+	
+def ResetConnection():
+	cmd = settings.device.shell('settings put global http_proxy :0')
+	return cmd
+	
+def logcat(app):
+	cmd = settings.device.shell('logcat -d *:E | grep '+app)
 	return cmd
