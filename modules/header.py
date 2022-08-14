@@ -1,6 +1,7 @@
 
 
-def title(): 
+def title():
+	print("\x1bc")
 	print("  _____ _                 _  __              _ ")
 	print(" / ____(_)          /\   | |/ _|            | |")
 	print(" | (___ _ _ __     /  \  | | |_ _ __ ___  __| |")
@@ -26,7 +27,8 @@ def title():
 	print("  Adb Shell Account Checker - v.1.3")
 	print("  ----------------------------------\n")
 
-def Checking():         
+def Checking():
+	print("\x1bc")         
 	print("  _____ _                 _  __              _ ")
 	print(" / ____(_)          /\   | |/ _|            | |")
 	print(" | (___ _ _ __     /  \  | | |_ _ __ ___  __| |")
@@ -52,7 +54,8 @@ def Checking():
 	print("  Adb Shell Account Checker - v.1.3")
 	print("  ----------------------------------\n")
 
-def Valid():         
+def Valid(): 
+	print("\x1bc")        
 	print("  _____ _                 _  __              _ ")
 	print(" / ____(_)          /\   | |/ _|            | |")
 	print(" | (___ _ _ __     /  \  | | |_ _ __ ___  __| |")
@@ -78,7 +81,8 @@ def Valid():
 	print("  Adb Shell Account Checker - v.1.3")
 	print("  ----------------------------------\n")
 
-def Invalid():         
+def Invalid():
+	print("\x1bc")         
 	print("  _____ _                 _  __              _ ")
 	print(" / ____(_)          /\   | |/ _|            | |")
 	print(" | (___ _ _ __     /  \  | | |_ _ __ ___  __| |")
@@ -104,7 +108,8 @@ def Invalid():
 	print("  Adb Shell Account Checker - v.1.3")
 	print("  ----------------------------------\n")
 
-def AllDone():         
+def AllDone():
+	print("\x1bc")         
 	print("  _____ _                 _  __              _ ")
 	print(" / ____(_)          /\   | |/ _|            | |")
 	print(" | (___ _ _ __     /  \  | | |_ _ __ ___  __| |")
